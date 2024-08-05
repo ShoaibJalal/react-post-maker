@@ -1,0 +1,31 @@
+.details {
+  padding: 1rem;
+  width: 30rem;
+}
+
+.title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.text {
+  white-space: pre-wrap;
+  font-size: 1.25rem;
+  margin: 0.25rem 0 0 0;
+  color: #ffffff;
+  
+}
+.author {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.details a {
+  text-decoration: none;
+}

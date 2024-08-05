@@ -1,16 +1,20 @@
+import { useNavigate } from "react-router-dom";
+import classes from "./Modal.module.css";
 
-import classes from './Modal.module.css';
+function Modal({ children }: { children: React.ReactNode }) {
+  const navigate = useNavigate();
 
-function Modal ({children, onClose} : {children: React.ReactNode, onClose: React.MouseEventHandler<HTMLDivElement>}){
+  function closeHandler() {
+    navigate("/");
+  }
 
-    return (
-        <>
-        <div className={classes.backdrop} onClick={onClose}/>
-        <dialog open className={classes.modal}>
+  return (
+    <>
+      <div className={classes.backdrop} onClick={closeHandler} />
+      <dialog open className={classes.modal}>
         {children}
-        </dialog>
-        
-        </>
-    )
+      </dialog>
+    </>
+  );
 }
 export default Modal;

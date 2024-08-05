@@ -47,11 +47,17 @@
   color: #ffffff;
 }
 
-.actions button[type="button"] {
+.actions a {
   background-color: #ff0000;
+  text-decoration: none;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  color: #2a2630;
 }
 
-.actions button[type="button"]:hover {
+.actions a:hover {
   background-color: #810000;
   color: #ffffff;
 }
